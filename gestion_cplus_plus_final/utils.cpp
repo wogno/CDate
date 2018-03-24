@@ -2,8 +2,21 @@
 
 void insererEmploye(Cemploye *tab, int &i)
 {
-  string nom_, prenom_;
+  string nom_, prenom_, fonction_;
   Status status_;
+  CDate dateN, dateE;
+  cout <<"Entrer le nom et le prenom  et votre fonction :"<<endl;
+  cin>>nom_>>prenom_>>fonction_;
+  cout <<"data naissance :"<<endl;
+  //cin>>dateN;
+  cout <<"Venez vous d'etre embauche \n1: Oui \n2: Non "<<endl;
+  int choix ;
+  cin>>choix;
+  if(!choix)
+    cin>> dateE;
+  cout <<"";;// demander les renseignement sur l employe
+  
+    
 }
 
 void rechercherEmplpoye(Cemploye *tab, int i)
@@ -31,8 +44,9 @@ void supprimerEmploye(Cemploye *tab, int &i)
       {
         for(int t=d; t<i; t++)
           {
-            tab[t] = tab[++t]
+            tab[t] = tab[t+a'1]
           }
+         i--;
       break;
       }
       
@@ -44,6 +58,7 @@ void supprimerEmploye(Cemploye *tab, int &i)
 
 void listeRetraite(Cemploye *tab, int i)
 {
+  
 
 }
 
