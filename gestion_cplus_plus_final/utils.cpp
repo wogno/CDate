@@ -84,7 +84,12 @@ void masseSalariale(Cemploye tab[], int i)
 
 void calculeSalaireEmp(Cemploye tab[], int i)
 {
-
+  for(int d=0; d<i; d++))
+    {
+      tab[d].afficher();
+     
+  }
+  masseSalariale(tab, i);
 }
 
 void fonctionnaire(Cemploye tab[], int i)
