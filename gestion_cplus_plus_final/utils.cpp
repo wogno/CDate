@@ -1,6 +1,6 @@
 #include "utils.h"
 
-void insererEmploye(Cemploye *tab, int &i)
+void insererEmploye(Cemploye tab[], int &i)
 {
   string nom_, prenom_, fonction_;
   Status status_;
@@ -19,7 +19,7 @@ void insererEmploye(Cemploye *tab, int &i)
     
 }
 
-void rechercherEmplpoye(Cemploye *tab, int i)
+void rechercherEmplpoye(Cemploye tab[], int i)
 {
   string nom_;
   cout>>nom_;
@@ -35,7 +35,7 @@ void rechercherEmplpoye(Cemploye *tab, int i)
 
 }
 
-void supprimerEmploye(Cemploye *tab, int &i)
+void supprimerEmploye(Cemploye tab[], int &i)
 {
   string matricule_;
   cout <<"entrer votre numero matricule";
@@ -58,11 +58,19 @@ void supprimerEmploye(Cemploye *tab, int &i)
 
 void listeRetraite(Cemploye *tab, int i)
 {
+  for(int d=0; d<i; d++)
+    {
+       if (tab[d].dateRetrait().getAnnnee() == CDate().getAnnee)
+         {
+         tab[i].afficher();
+         cout <<"______________ _______  ____ __ "<<endl;
+         }
+    }
   
 
 }
 
-void masseSalariale(Cemploye *tab, int i)
+void masseSalariale(Cemploye tab[], int i)
 {
   double sum=0;
  for (int d=0; d<i; d++)
@@ -74,12 +82,12 @@ void masseSalariale(Cemploye *tab, int i)
 
 }
 
-void calculeSalaireEmp(Cemploye *tab, int i)
+void calculeSalaireEmp(Cemploye tab[], int i)
 {
 
 }
 
-void fonctionnaire(Cemploye *tab, int i)
+void fonctionnaire(Cemploye tab[], int i)
 {
   int nb=0;
   for(int d=0; d<i; d++)
@@ -94,7 +102,7 @@ void fonctionnaire(Cemploye *tab, int i)
 
 }
 
-void conges(Cemploye *tab, int i)
+void conges(Cemploye tab[], int i)
 {
 
 }
