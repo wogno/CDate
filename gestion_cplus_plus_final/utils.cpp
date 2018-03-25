@@ -87,7 +87,7 @@ void calculeSalaireEmp(Cemploye tab[], int i)
   for(int d=0; d<i; d++))
     {
       tab[d].afficher();
-     
+      cout<<"__________   ______ ___  _______ __,"<<endl;
   }
   masseSalariale(tab, i);
 }
